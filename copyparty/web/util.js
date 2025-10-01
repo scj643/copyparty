@@ -1040,6 +1040,10 @@ function humansize_fuzzy(b) {
 	if (b <= 1300000000) return "GD-ROM";
 	if (b <= 4700000000) return "DVD";
 	if (b <= 9400000000) return "DVD-DL";
+	if (b <= 25000000000) return "BD";
+	if (b <= 50000000000) return "BD-DL";
+	if (b <= 100000000000) return "BDXL-TL";
+	if (b <= 128000000000) return "BDXL-QL";
 	return "LTO";
 }
 var humansize_fmts = ['0', '1', '2', '2c', '3', '3c', '4', '4c', '5', '5c', 'fuzzy'];
